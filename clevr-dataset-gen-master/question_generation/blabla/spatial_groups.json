@@ -1,0 +1,27 @@
+[
+{
+  "params": [
+    {"type": "Size", "name": "<Z>"},
+    {"type": "Color", "name": "<C>"},
+    {"type": "Material", "name": "<M>"},
+    {"type": "Shape", "name": "<S>"},
+    {"type": "Relation", "name": "<R>"},
+    {"type": "Size", "name": "<Z2>"},
+    {"type": "Color", "name": "<C2>"},
+    {"type": "Material", "name": "<M2>"},
+    {"type": "Shape", "name": "<S2>"},
+    {"type": "Group","name": "<G>"},
+    {"type": "Group","name": "<G2>"}
+  ],
+  "text": [
+    "Is there a group with a <S>?"
+  ],
+  "nodes": [
+    {"type": "scene", "inputs": []},
+    {"type": "build_groups", "inputs": [0]},
+    {"type": "filter_shape", "inputs": [1], "side_inputs": ["<S>"]},
+    {"type": "count", "inputs": [2]}
+  ],
+  "constraints": []
+}
+]
